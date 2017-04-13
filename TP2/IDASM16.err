@@ -1,0 +1,8 @@
+Message[312] C:\PROGRAM FILES\MICROCHIP\MPASM SUITE\EXAMPLE\IDASM16.ASM 42 : Page or Bank selection not needed for this device.  No code generated.
+Warning[207] C:\PROGRAM FILES\MICROCHIP\MPASM SUITE\EXAMPLE\IDASM16.ASM 133 : Found label after column 1. (TABLE_OFFSET)
+Message[312] C:\PROGRAM FILES\MICROCHIP\MPASM SUITE\EXAMPLE\IDASM16.ASM 42 : Page or Bank selection not needed for this device.  No code generated.
+Warning[207] C:\PROGRAM FILES\MICROCHIP\MPASM SUITE\EXAMPLE\IDASM16.ASM 153 : Found label after column 1. (TABLE_OFFSET)
+Message[312] C:\PROGRAM FILES\MICROCHIP\MPASM SUITE\EXAMPLE\IDASM16.ASM 42 : Page or Bank selection not needed for this device.  No code generated.
+Warning[207] C:\PROGRAM FILES\MICROCHIP\MPASM SUITE\EXAMPLE\IDASM16.ASM 155 : Found label after column 1. (TABLE_OFFSET)
+Message[312] C:\PROGRAM FILES\MICROCHIP\MPASM SUITE\EXAMPLE\IDASM16.ASM 42 : Page or Bank selection not needed for this device.  No code generated.
+Warning[207] C:\PROGRAM FILES\MICROCHIP\MPASM SUITE\EXAMPLE\IDASM16.ASM 157 : Found label after column 1. (TABLE_OFFSET)

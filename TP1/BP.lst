@@ -1,0 +1,158 @@
+MPASM  5.11                            BP.ASM   4-6-2010  10:37:24         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 
+                      00002 
+                      00003         LIST      p=16F84            ; Définition du processeur utilisé
+                      00004         #include <p16F84.inc>        ; Définitions de variables
+                      00001         LIST
+                      00002 ; P16F84.INC  Standard Header File, Version 2.00    Microchip Technology, Inc.
+Message[301]: MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
+                      00136         LIST
+                      00005 
+2007   3FF2           00006         __CONFIG   0x3FF2                       ; défini logiciellement la valeur 
+                      00007                                                                 ; (???? à préciser !) qui sera chargée  
+                      00008                                                                 ; à la programmation dans le registre CO
+                            NFIG
+                      00009 
+                      00010 
+                      00011 ;**********************************************************************
+                      00012 ;                      DEMARRAGE SUR RESET                            *
+                      00013 ;**********************************************************************
+                      00014 
+0000                  00015         org 0x000               ; fixe l'adresse d'implantation (mémoire programme) 
+                      00016                                         ; du bloc d'instructions qui suit
+0000                  00017 reset
+0000   2807           00018         goto start
+                      00019 
+                      00020 ;*********************************************************************
+                      00021 ;                       INITIALISATION                               *
+                      00022 ;*********************************************************************
+0001                  00023 init
+0001   1683           00024         BSF STATUS,RP0 ; rpo a 1 pour banque 1
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0002   1381           00025         BCF OPTION_REG, NOT_RBPU
+0003   3001           00026         MOVLW 0x01 ; valeur qu'on veut charger
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0004   0086           00027         MOVWF TRISB ; on déplace la valeur de W à TRISB
+0005   1283           00028         BCF STATUS,RP0
+0006   0008           00029         return
+                      00030 ;*********************************************************************
+                      00031 ;                      PROGRAMME PRINCIPAL                           *
+                      00032 ;*********************************************************************
+                      00033 
+0007                  00034 start
+0007   2001           00035         call init
+0008                  00036 boucle
+0008   1C06           00037         BTFSS PORTB,0 ; si RB0 est a 0 (appuyé)
+0009   3060           00038         MOVLW 0x60 ; affichage de 1 
+                      00039 
+000A   1806           00040         BTFSC PORTB,0 ; si RB0 est à 1 (relaché)
+000B   30FC           00041         MOVLW 0xFC ; affichage de 0
+                      00042 
+000C   0086           00043         MOVWF PORTB
+                      00044 
+000D   2808           00045         goto boucle
+                      00046         
+MPASM  5.11                            BP.ASM   4-6-2010  10:37:24         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00047         END                     ; directive fin de programme
+MPASM  5.11                            BP.ASM   4-6-2010  10:37:24         PAGE  3
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+C                                 00000000
+DC                                00000001
+EEADR                             00000009
+EECON1                            00000088
+EECON2                            00000089
+EEDATA                            00000008
+EEIE                              00000006
+EEIF                              00000004
+F                                 00000001
+FSR                               00000004
+GIE                               00000007
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+NOT_PD                            00000003
+NOT_RBPU                          00000007
+NOT_TO                            00000004
+OPTION_REG                        00000081
+PCL                               00000002
+PCLATH                            0000000A
+PORTA                             00000005
+PORTB                             00000006
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+RBIE                              00000003
+RBIF                              00000000
+RD                                00000000
+RP0                               00000005
+RP1                               00000006
+STATUS                            00000003
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+TMR0                              00000001
+TRISA                             00000085
+TRISB                             00000086
+W                                 00000000
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_CP_OFF                           00003FFF
+_CP_ON                            0000000F
+_HS_OSC                           00003FFE
+_LP_OSC                           00003FFC
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+MPASM  5.11                            BP.ASM   4-6-2010  10:37:24         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_RC_OSC                           00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_XT_OSC                           00003FFD
+__16F84A                          00000001
+boucle                            00000008
+init                              00000001
+reset                             00000000
+start                             00000007
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXXXX-- ---------------- ---------------- ----------------
+2000 : -------X-------- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    14
+Program Memory Words Free:  1010
+
+
+Errors   :     0
+Warnings :     0 reported,     0 suppressed
+Messages :     3 reported,     0 suppressed
+
+

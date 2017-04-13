@@ -1,0 +1,330 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICMIDHI PICLOMID PICREGULAR ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F84A ]
+"74 H:\MicroControleur\TP3\mes.c
+[v F142 `(v  1 t 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\abdiv.c
+[v ___abdiv `(c  1 e 1 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\abmod.c
+[v ___abmod `(c  1 e 1 0 ]
+"32 C:\Program Files\HI-TECH Software\PICC\9.70\sources\abtofl.c
+[v ___abtofl `(d  1 e 3 0 ]
+"34 C:\Program Files\HI-TECH Software\PICC\9.70\sources\abtoft.c
+[v ___abtoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\aldiv.c
+[v ___aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\almod.c
+[v ___almod `(l  1 e 4 0 ]
+"37 C:\Program Files\HI-TECH Software\PICC\9.70\sources\altofl.c
+[v ___altofl `(d  1 e 3 0 ]
+"43 C:\Program Files\HI-TECH Software\PICC\9.70\sources\altoft.c
+[v ___altoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\atdiv.c
+[v ___atdiv `(m  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\atmod.c
+[v ___atmod `(m  1 e 3 0 ]
+"38 C:\Program Files\HI-TECH Software\PICC\9.70\sources\attofl.c
+[v ___attofl `(d  1 e 3 0 ]
+"38 C:\Program Files\HI-TECH Software\PICC\9.70\sources\attoft.c
+[v ___attoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\awmod.c
+[v ___awmod `(i  1 e 2 0 ]
+"32 C:\Program Files\HI-TECH Software\PICC\9.70\sources\awtofl.c
+[v ___awtofl `(d  1 e 3 0 ]
+"33 C:\Program Files\HI-TECH Software\PICC\9.70\sources\awtoft.c
+[v ___awtoft `(f  1 e 3 0 ]
+"3 C:\Program Files\HI-TECH Software\PICC\9.70\sources\bmul.c
+[v ___bmul `(uc  1 e 1 0 ]
+"64 C:\Program Files\HI-TECH Software\PICC\9.70\sources\double.c
+[v ___flpack `(d  1 e 3 0 ]
+"8 C:\Program Files\HI-TECH Software\PICC\9.70\sources\eewrite.c
+[v _eeprom_write `(v  1 e 0 0 ]
+"89 C:\Program Files\HI-TECH Software\PICC\9.70\sources\fladd.c
+[v ___fladd `(d  1 e 3 0 ]
+"50 C:\Program Files\HI-TECH Software\PICC\9.70\sources\fldiv.c
+[v ___fldiv `(d  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\flge.c
+[v ___flge `(b  1 e 0 0 ]
+"51 C:\Program Files\HI-TECH Software\PICC\9.70\sources\flmul.c
+[v ___flmul `(d  1 e 3 0 ]
+"16 C:\Program Files\HI-TECH Software\PICC\9.70\sources\flneg.c
+[v ___flneg `(d  1 e 3 0 ]
+"63 C:\Program Files\HI-TECH Software\PICC\9.70\sources\float.c
+[v ___ftpack `(f  1 e 3 0 ]
+"17 C:\Program Files\HI-TECH Software\PICC\9.70\sources\flsub.c
+[v ___flsub `(d  1 e 3 0 ]
+"44 C:\Program Files\HI-TECH Software\PICC\9.70\sources\fltol.c
+[v ___fltol `(l  1 e 4 0 ]
+"87 C:\Program Files\HI-TECH Software\PICC\9.70\sources\ftadd.c
+[v ___ftadd `(f  1 e 3 0 ]
+"50 C:\Program Files\HI-TECH Software\PICC\9.70\sources\ftdiv.c
+[v ___ftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\ftge.c
+[v ___ftge `(b  1 e 0 0 ]
+"52 C:\Program Files\HI-TECH Software\PICC\9.70\sources\ftmul.c
+[v ___ftmul `(f  1 e 3 0 ]
+"16 C:\Program Files\HI-TECH Software\PICC\9.70\sources\ftneg.c
+[v ___ftneg `(f  1 e 3 0 ]
+"17 C:\Program Files\HI-TECH Software\PICC\9.70\sources\ftsub.c
+[v ___ftsub `(f  1 e 3 0 ]
+"45 C:\Program Files\HI-TECH Software\PICC\9.70\sources\fttol.c
+[v ___fttol `(l  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lbdiv.c
+[v ___lbdiv `(uc  1 e 1 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lbmod.c
+[v ___lbmod `(uc  1 e 1 0 ]
+"28 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lbtofl.c
+[v ___lbtofl `(d  1 e 3 0 ]
+"28 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lbtoft.c
+[v ___lbtoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+"31 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lltofl.c
+[v ___lltofl `(d  1 e 3 0 ]
+"36 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lltoft.c
+[v ___lltoft `(f  1 e 3 0 ]
+"3 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lmul.c
+[v ___lmul `(ul  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\ltdiv.c
+[v ___ltdiv `(um  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\ltmod.c
+[v ___ltmod `(um  1 e 3 0 ]
+"31 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lttofl.c
+[v ___lttofl `(d  1 e 3 0 ]
+"31 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lttoft.c
+[v ___lttoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lwdiv.c
+[v ___lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lwmod.c
+[v ___lwmod `(ui  1 e 2 0 ]
+"29 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lwtofl.c
+[v ___lwtofl `(d  1 e 3 0 ]
+"29 C:\Program Files\HI-TECH Software\PICC\9.70\sources\lwtoft.c
+[v ___lwtoft `(f  1 e 3 0 ]
+"3 C:\Program Files\HI-TECH Software\PICC\9.70\sources\tmul.c
+[v ___tmul `(um  1 e 3 0 ]
+"3 C:\Program Files\HI-TECH Software\PICC\9.70\sources\wmul.c
+[v ___wmul `(ui  1 e 2 0 ]
+"8 C:\Program Files\HI-TECH Software\PICC\9.70\sources\eeread.c
+[v _eeprom_read `(uc  1 e 1 0 ]
+"9 H:\MicroControleur\TP3\mes.c
+[v _init `(v  1 e 0 0 ]
+"20
+[v _caractere `(v  1 e 0 0 ]
+"54
+[v _vitesse `(v  1 e 0 0 ]
+"65
+[v _main `(i  1 e 2 0 ]
+"74
+[v _inter `I(v  1 e 0 0 ]
+"5 H:\MicroControleur\TP3\tempo.c
+[v _tempo `(i  1 e 2 0 ]
+"17 C:\Program Files\HI-TECH Software\PICC\9.70\include\pic1684.h
+[v _INDF `Vuc  1 e 1 @0 ]
+"18
+[v _RTCC `Vuc  1 e 1 @1 ]
+"19
+[v _TMR0 `Vuc  1 e 1 @1 ]
+"20
+[v _PCL `Vuc  1 e 1 @2 ]
+"21
+[v _STATUS `Vuc  1 e 1 @3 ]
+"22
+[v _FSR `uc  1 e 1 @4 ]
+"23
+[v _PORTA `Vuc  1 e 1 @5 ]
+"24
+[v _PORTB `Vuc  1 e 1 @6 ]
+"25
+[v _EEDATA `Vuc  1 e 1 @8 ]
+"26
+[v _EEADR `Vuc  1 e 1 @9 ]
+"27
+[v _PCLATH `uc  1 e 1 @10 ]
+"28
+[v _INTCON `Vuc  1 e 1 @11 ]
+"30
+[v _OPTION `uc  1 e 1 @129 ]
+"31
+[v _TRISA `Vuc  1 e 1 @133 ]
+"32
+[v _TRISB `Vuc  1 e 1 @134 ]
+"33
+[v _EECON1 `Vuc  1 e 1 @136 ]
+"34
+[v _EECON2 `Vuc  1 e 1 @137 ]
+"37
+[v _RP0 `Vb  1 e 0 @29 ]
+"38
+[v _TO `Vb  1 e 0 @28 ]
+"39
+[v _PD `Vb  1 e 0 @27 ]
+"40
+[v _ZERO `Vb  1 e 0 @26 ]
+"41
+[v _DC `Vb  1 e 0 @25 ]
+"42
+[v _CARRY `Vb  1 e 0 @24 ]
+"45
+[v _RA4 `Vb  1 e 0 @44 ]
+"46
+[v _RA3 `Vb  1 e 0 @43 ]
+"47
+[v _RA2 `Vb  1 e 0 @42 ]
+"48
+[v _RA1 `Vb  1 e 0 @41 ]
+"49
+[v _RA0 `Vb  1 e 0 @40 ]
+"52
+[v _RB7 `Vb  1 e 0 @55 ]
+"53
+[v _RB6 `Vb  1 e 0 @54 ]
+"54
+[v _RB5 `Vb  1 e 0 @53 ]
+"55
+[v _RB4 `Vb  1 e 0 @52 ]
+"56
+[v _RB3 `Vb  1 e 0 @51 ]
+"57
+[v _RB2 `Vb  1 e 0 @50 ]
+"58
+[v _RB1 `Vb  1 e 0 @49 ]
+"59
+[v _RB0 `Vb  1 e 0 @48 ]
+"60
+[v _INT `Vb  1 e 0 @48 ]
+"63
+[v _GIE `Vb  1 e 0 @95 ]
+"64
+[v _EEIE `Vb  1 e 0 @94 ]
+"65
+[v _T0IE `Vb  1 e 0 @93 ]
+"66
+[v _INTE `Vb  1 e 0 @92 ]
+"67
+[v _RBIE `Vb  1 e 0 @91 ]
+"68
+[v _T0IF `Vb  1 e 0 @90 ]
+"69
+[v _INTF `Vb  1 e 0 @89 ]
+"70
+[v _RBIF `Vb  1 e 0 @88 ]
+"73
+[v _RBPU `b  1 e 0 @1039 ]
+"74
+[v _INTEDG `b  1 e 0 @1038 ]
+"75
+[v _T0CS `b  1 e 0 @1037 ]
+"76
+[v _T0SE `b  1 e 0 @1036 ]
+"77
+[v _PSA `b  1 e 0 @1035 ]
+"78
+[v _PS2 `b  1 e 0 @1034 ]
+"79
+[v _PS1 `b  1 e 0 @1033 ]
+"80
+[v _PS0 `b  1 e 0 @1032 ]
+"83
+[v _TRISA4 `Vb  1 e 0 @1068 ]
+"84
+[v _TRISA3 `Vb  1 e 0 @1067 ]
+"85
+[v _TRISA2 `Vb  1 e 0 @1066 ]
+"86
+[v _TRISA1 `Vb  1 e 0 @1065 ]
+"87
+[v _TRISA0 `Vb  1 e 0 @1064 ]
+"90
+[v _TRISB7 `Vb  1 e 0 @1079 ]
+"91
+[v _TRISB6 `Vb  1 e 0 @1078 ]
+"92
+[v _TRISB5 `Vb  1 e 0 @1077 ]
+"93
+[v _TRISB4 `Vb  1 e 0 @1076 ]
+"94
+[v _TRISB3 `Vb  1 e 0 @1075 ]
+"95
+[v _TRISB2 `Vb  1 e 0 @1074 ]
+"96
+[v _TRISB1 `Vb  1 e 0 @1073 ]
+"97
+[v _TRISB0 `Vb  1 e 0 @1072 ]
+"100
+[v _EEIF `Vb  1 e 0 @1092 ]
+"101
+[v _WRERR `Vb  1 e 0 @1091 ]
+"102
+[v _WREN `Vb  1 e 0 @1090 ]
+"103
+[v _WR `Vb  1 e 0 @1089 ]
+"104
+[v _RD `Vb  1 e 0 @1088 ]
+"65 H:\MicroControleur\TP3\mes.c
+[v _main `(i  1 e 2 0 ]
+{
+"71
+} 0
+"9
+[v _init `(v  1 e 0 0 ]
+{
+"17
+} 0
+"8 C:\Program Files\HI-TECH Software\PICC\9.70\sources\eeread.c
+[v _eeprom_read `(uc  1 e 1 0 ]
+{
+[v eeprom_read@addr `uc  1 a 1 wreg ]
+[v eeprom_read@addr `uc  1 a 1 wreg ]
+"11
+} 0
+"74 H:\MicroControleur\TP3\mes.c
+[v _inter `I(v  1 e 0 0 ]
+{
+"75
+[v inter@n `i  1 s 2 n ]
+"90
+} 0
+"5 H:\MicroControleur\TP3\tempo.c
+[v _tempo `(i  1 e 2 0 ]
+{
+"6
+[v tempo@i `l  1 a 4 5 ]
+"8
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC\9.70\sources\awmod.c
+[v ___awmod `(i  1 e 2 0 ]
+{
+"6
+[v ___awmod@sign `uc  1 a 1 5 ]
+[v ___awmod@counter `uc  1 a 1 6 ]
+"5
+[v ___awmod@dividend `i  1 p 2 7 ]
+[v ___awmod@divisor `i  1 p 2 9 ]
+"30
+} 0
+"20 H:\MicroControleur\TP3\mes.c
+[v _caractere `(v  1 e 0 0 ]
+{
+"21
+[v caractere@n `i  1 s 2 n ]
+"51
+} 0
+"54
+[v _vitesse `(v  1 e 0 0 ]
+{
+"61
+} 0
+"8 C:\Program Files\HI-TECH Software\PICC\9.70\sources\eewrite.c
+[v _eeprom_write `(v  1 e 0 0 ]
+{
+[v eeprom_write@addr `uc  1 a 1 wreg ]
+[v eeprom_write@addr `uc  1 a 1 wreg ]
+[v eeprom_write@value `uc  1 p 1 6 ]
+"10
+} 0

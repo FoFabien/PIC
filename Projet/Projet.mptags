@@ -1,0 +1,56 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+DB4::RD0	H:\MicroControleur\Projet\liblcd.h	1;"	d	line:1
+DB5::RD1	H:\MicroControleur\Projet\liblcd.h	2;"	d	line:2
+DB6::RD2	H:\MicroControleur\Projet\liblcd.h	3;"	d	line:3
+DB7::RD3	H:\MicroControleur\Projet\liblcd.h	4;"	d	line:4
+E::RD6	H:\MicroControleur\Projet\liblcd.h	7;"	d	line:7
+PROTECT	H:\MicroControleur\Projet\test_led.c	4;"	v	line:4
+RS::RD4	H:\MicroControleur\Projet\liblcd.h	5;"	d	line:5
+RW::RD5	H:\MicroControleur\Projet\liblcd.h	6;"	d	line:6
+S2::RA4	H:\MicroControleur\Projet\liblcd.h	9;"	d	line:9
+S3::RB0	H:\MicroControleur\Projet\liblcd.h	10;"	d	line:10
+Tempo_us	H:\MicroControleur\Projet\liblcd.c	4;"	f	line:4	signature:(unsigned short nb_us)
+Tempo_us	H:\MicroControleur\Projet\liblcd.h	12;"	p	line:12	signature:(unsigned short nb_us)
+VCC::RD7	H:\MicroControleur\Projet\liblcd.h	8;"	d	line:8
+affichageHeure	H:\MicroControleur\Projet\test_led.c	56;"	f	line:56	signature:(void)
+c	H:\MicroControleur\Projet\liblcd.c	40;"	l	line:40
+heartBeat	H:\MicroControleur\Projet\test_led.c	176;"	f	line:176	signature:(void)
+heure	H:\MicroControleur\Projet\test_led.c	8;"	v	line:8	file:
+horloge	H:\MicroControleur\Projet\test_led.c	39;"	f	line:39	signature:(void)
+i	H:\MicroControleur\Projet\liblcd.c	87;"	l	line:87
+i	H:\MicroControleur\Projet\liblcd.c	97;"	l	line:97
+i	H:\MicroControleur\Projet\test_led.c	105;"	l	line:105	file:
+i	H:\MicroControleur\Projet\test_led.c	58;"	l	line:58	file:
+init	H:\MicroControleur\Projet\test_led.c	12;"	f	line:12	signature:(void)
+lcd_busy	H:\MicroControleur\Projet\liblcd.c	38;"	f	line:38	signature:(void)
+lcd_busy	H:\MicroControleur\Projet\liblcd.h	14;"	p	line:14	signature:(void)
+lcd_clear	H:\MicroControleur\Projet\liblcd.c	107;"	f	line:107	signature:(void)
+lcd_clear	H:\MicroControleur\Projet\liblcd.h	19;"	p	line:19	signature:(void)
+lcd_home	H:\MicroControleur\Projet\liblcd.c	112;"	f	line:112	signature:(void)
+lcd_home	H:\MicroControleur\Projet\liblcd.h	20;"	p	line:20	signature:(void)
+lcd_init	H:\MicroControleur\Projet\liblcd.c	16;"	f	line:16	signature:(void)
+lcd_init	H:\MicroControleur\Projet\liblcd.h	13;"	p	line:13	signature:(void)
+lcd_pos	H:\MicroControleur\Projet\liblcd.c	95;"	f	line:95	signature:(unsigned char ligne, unsigned char pos)
+lcd_pos	H:\MicroControleur\Projet\liblcd.h	18;"	p	line:18	signature:(unsigned char ligne, unsigned char pos)
+lcd_putch	H:\MicroControleur\Projet\liblcd.c	71;"	f	line:71	signature:(unsigned char c)
+lcd_putch	H:\MicroControleur\Projet\liblcd.h	16;"	p	line:16	signature:(unsigned char c)
+lcd_puts	H:\MicroControleur\Projet\liblcd.c	85;"	f	line:85	signature:(const unsigned char * s)
+lcd_puts	H:\MicroControleur\Projet\liblcd.h	17;"	p	line:17	signature:(const unsigned char * s)
+lcd_write_instr	H:\MicroControleur\Projet\liblcd.c	57;"	f	line:57	signature:(unsigned char c)
+lcd_write_instr	H:\MicroControleur\Projet\liblcd.h	15;"	p	line:15	signature:(unsigned char c)
+main	H:\MicroControleur\Projet\test_led.c	163;"	f	line:163	signature:(void)
+maintien	H:\MicroControleur\Projet\test_led.c	91;"	f	line:91
+minute	H:\MicroControleur\Projet\test_led.c	7;"	v	line:7	file:
+mode	H:\MicroControleur\Projet\test_led.c	10;"	v	line:10	file:
+n	H:\MicroControleur\Projet\test_led.c	178;"	l	line:178	file:
+reglage	H:\MicroControleur\Projet\test_led.c	103;"	f	line:103	signature:(void)
+seconde	H:\MicroControleur\Projet\test_led.c	6;"	v	line:6	file:
+temp	H:\MicroControleur\Projet\test_led.c	9;"	v	line:9	file:
+timer	H:\MicroControleur\Projet\test_led.c	185;"	f	line:185	signature:(void)

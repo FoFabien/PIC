@@ -1,0 +1,86 @@
+MPLINK 4.11, Linker
+Linker Map File - Created Tue May 11 13:53:30 2010
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                    reset       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000005    program   0x000010
+          _copy_idata_sec       code   0x00000d    program   0x000084
+                     prog       code   0x00004f    program   0x00002c
+                 SP_tempo       code   0x000065    program   0x000018
+           données_init_i    romdata   0x000071    program   0x000002
+                  .config       code   0x002007    program   0x000002
+                VARIABLES      udata   0x00000c       data   0x00000a
+                  données      udata   0x000016       data   0x000002
+             données_init      idata   0x000018       data   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000005    0x000071      
+                            0x002007    0x002007      
+            111 out of 1093 program addresses used, program memory utilization is 10%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  _Dummy1   0x000030    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+                  _Dummy2   0x000034    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+           _copy_init_sec   0x000018    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+            _dec_num_init   0x000048    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+      _end_copy_init_data   0x00004e    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+           _loop_num_init   0x000012    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+      _start_copying_data   0x000027    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+                   boucle   0x00005c    program     static H:\MicroControleur\TP2\chen5.asm
+                  boucle1   0x000069    program     static H:\MicroControleur\TP2\tempo.asm
+                  boucle2   0x000068    program     static H:\MicroControleur\TP2\tempo.asm
+                  boucle3   0x000067    program     static H:\MicroControleur\TP2\tempo.asm
+           copy_init_data   0x00000d    program     extern C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+                     init   0x00004f    program     static H:\MicroControleur\TP2\chen5.asm
+                    start   0x00005a    program     static H:\MicroControleur\TP2\chen5.asm
+                    tempo   0x000065    program     extern H:\MicroControleur\TP2\tempo.asm
+                    cmpt1   0x000016       data     static H:\MicroControleur\TP2\tempo.asm
+                    cmpt2   0x000017       data     static H:\MicroControleur\TP2\tempo.asm
+                    cmpt3   0x000018       data     static H:\MicroControleur\TP2\tempo.asm
+     init_entry_from_addr   0x00000e       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+         init_entry_index   0x000014       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+          init_entry_size   0x000012       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+       init_entry_to_addr   0x000010       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+                 num_init   0x00000c       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+           copy_init_data   0x00000d    program     extern C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+           _loop_num_init   0x000012    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+           _copy_init_sec   0x000018    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+      _start_copying_data   0x000027    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+                  _Dummy1   0x000030    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+                  _Dummy2   0x000034    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+            _dec_num_init   0x000048    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+      _end_copy_init_data   0x00004e    program     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+                     init   0x00004f    program     static H:\MicroControleur\TP2\chen5.asm
+                    start   0x00005a    program     static H:\MicroControleur\TP2\chen5.asm
+                   boucle   0x00005c    program     static H:\MicroControleur\TP2\chen5.asm
+                    tempo   0x000065    program     extern H:\MicroControleur\TP2\tempo.asm
+                  boucle3   0x000067    program     static H:\MicroControleur\TP2\tempo.asm
+                  boucle2   0x000068    program     static H:\MicroControleur\TP2\tempo.asm
+                  boucle1   0x000069    program     static H:\MicroControleur\TP2\tempo.asm
+                 num_init   0x00000c       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+     init_entry_from_addr   0x00000e       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+       init_entry_to_addr   0x000010       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+          init_entry_size   0x000012       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+         init_entry_index   0x000014       data     static C:\Program Files\Microchip\MPASM Suite\Example\IDASM16.ASM
+                    cmpt1   0x000016       data     static H:\MicroControleur\TP2\tempo.asm
+                    cmpt2   0x000017       data     static H:\MicroControleur\TP2\tempo.asm
+                    cmpt3   0x000018       data     static H:\MicroControleur\TP2\tempo.asm
+
+

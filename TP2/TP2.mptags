@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+BANK0	H:\MicroControleur\TP2\chen3.asm	42;"	m	line:42
+BANK1	H:\MicroControleur\TP2\chen3.asm	46;"	m	line:46
+INIT_PORTA	H:\MicroControleur\TP2\chen3.asm	29;"	q	line:29
+INIT_PORTB	H:\MicroControleur\TP2\chen3.asm	30;"	q	line:30
+TRISA_VAL	H:\MicroControleur\TP2\chen3.asm	27;"	q	line:27
+TRISB_VAL	H:\MicroControleur\TP2\chen3.asm	28;"	q	line:28
+boucle	H:\MicroControleur\TP2\chen3.asm	150;"	l	line:150
+cmpt	H:\MicroControleur\TP2\chen3.asm	56;"	l	line:56
+init	H:\MicroControleur\TP2\chen3.asm	118;"	l	line:118
+restorereg	H:\MicroControleur\TP2\chen3.asm	104;"	l	line:104
+routine_IT	H:\MicroControleur\TP2\chen3.asm	75;"	l	line:75
+start	H:\MicroControleur\TP2\chen3.asm	147;"	l	line:147
+status_temp	H:\MicroControleur\TP2\chen3.asm	57;"	l	line:57
+w_temp	H:\MicroControleur\TP2\chen3.asm	58;"	l	line:58

@@ -1,0 +1,10 @@
+_init: CODE, 328 0 28
+_vitesse: CODE, 383 0 22
+___awmod: CODE, 16 0 91
+_main: CODE, 411 0 3
+_inter: CODE, 176 0 58
+_caractere: CODE, 107 0 69
+_tempo: CODE, 234 0 54
+_eeprom_read: CODE, 356 0 27
+_eeprom_write: CODE, 288 0 40
+Total: 392

@@ -1,0 +1,3 @@
+Message[301] C:\LOGICIEL\PIC\MPLAB7_6\MPASM SUITE\P16F84.INC 37 : MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
+Message[302] D:\USERS\FORESTJUGLIN\TP1\BP.ASM 25 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\USERS\FORESTJUGLIN\TP1\BP.ASM 27 : Register in operand not in bank 0.  Ensure that bank bits are correct.

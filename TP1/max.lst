@@ -1,0 +1,174 @@
+MPASM  5.11                           MAX.ASM   4-6-2010  12:03:13         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 
+                      00002 
+                      00003         LIST      p=16F84            ; Définition du processeur utilisé
+                      00004         #include <p16F84.inc>        ; Définitions de variables
+                      00001         LIST
+                      00002 ; P16F84.INC  Standard Header File, Version 2.00    Microchip Technology, Inc.
+Message[301]: MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
+                      00136         LIST
+                      00005 
+2007   3FF2           00006         __CONFIG   0x3FF2                       ; défini logiciellement la valeur 
+                      00007                                                                 ; (???? à préciser !) qui sera chargée  
+                      00008                                                                 ; à la programmation dans le registre CO
+                            NFIG
+                      00009 
+                      00010 ;*********************************************************************
+                      00011 ;                   DECLARATIONS DE VARIABLES                        *
+                      00012 ;*********************************************************************
+                      00013 
+                      00014         CBLOCK 0x00C    ; début de la zone de variables (pour exemple)
+                      00015 
+  0000000C            00016         VAR : 1                 ; déclare une variable "VAR" de 1 octet (adresse 0x00C)
+  0000000D            00017         TABLEAU : 10    ; réserve une zone mémoire de 10 octets (0x00D - 0x017)
+                      00018                                         ; (TABLEAU est le 1er élément)
+                      00019     ENDC                        ; Fin de la zone   
+                      00020 ;**********************************************************************
+                      00021 ;                      DEMARRAGE SUR RESET                            *
+                      00022 ;**********************************************************************
+                      00023 
+0000                  00024         org 0x000               ; fixe l'adresse d'implantation (mémoire programme) 
+                      00025                                         ; du bloc d'instructions qui suit
+0000                  00026 reset
+0000   2807           00027         goto start
+                      00028 
+                      00029 ;*********************************************************************
+                      00030 ;                       INITIALISATION                               *
+                      00031 ;*********************************************************************
+0001                  00032 init
+0001   1283           00033         BCF STATUS,RP0
+                      00034 
+0002   300D           00035         movlw TABLEAU
+0003   0084           00036         movwf FSR
+                      00037 
+0004   0800           00038         movf INDF, 0
+0005   008C           00039         movwf VAR
+                      00040 
+0006   0008           00041         return
+                      00042 ;*********************************************************************
+                      00043 ;                      PROGRAMME PRINCIPAL                           *
+                      00044 ;*********************************************************************
+                      00045 
+0007                  00046 start
+0007   2001           00047         call init
+0008                  00048 boucle
+MPASM  5.11                           MAX.ASM   4-6-2010  12:03:13         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0008   0A84           00049         incf FSR, 1 
+0009   080C           00050         movf VAR, 0
+000A   0200           00051         subwf INDF, 0
+                      00052 
+000B   1803           00053         btfsc STATUS, C
+000C   0800           00054         movf INDF, 0
+                      00055 
+000D   1803           00056         btfsc STATUS, C
+000E   008C           00057         movwf VAR
+                      00058 
+000F   3016           00059         movlw 0x16
+0010   0204           00060         subwf FSR, 0
+0011   1D03           00061         btfss STATUS, Z
+0012   2808           00062         goto boucle     
+                      00063         END                     ; directive fin de programme
+MPASM  5.11                           MAX.ASM   4-6-2010  12:03:13         PAGE  3
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+C                                 00000000
+DC                                00000001
+EEADR                             00000009
+EECON1                            00000088
+EECON2                            00000089
+EEDATA                            00000008
+EEIE                              00000006
+EEIF                              00000004
+F                                 00000001
+FSR                               00000004
+GIE                               00000007
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+NOT_PD                            00000003
+NOT_RBPU                          00000007
+NOT_TO                            00000004
+OPTION_REG                        00000081
+PCL                               00000002
+PCLATH                            0000000A
+PORTA                             00000005
+PORTB                             00000006
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+RBIE                              00000003
+RBIF                              00000000
+RD                                00000000
+RP0                               00000005
+RP1                               00000006
+STATUS                            00000003
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+TABLEAU                           0000000D
+TMR0                              00000001
+TRISA                             00000085
+TRISB                             00000086
+VAR                               0000000C
+W                                 00000000
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_CP_OFF                           00003FFF
+_CP_ON                            0000000F
+_HS_OSC                           00003FFE
+_LP_OSC                           00003FFC
+MPASM  5.11                           MAX.ASM   4-6-2010  12:03:13         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_XT_OSC                           00003FFD
+__16F84A                          00000001
+boucle                            00000008
+init                              00000001
+reset                             00000000
+start                             00000007
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXXXXXX XXX------------- ---------------- ----------------
+2000 : -------X-------- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    19
+Program Memory Words Free:  1005
+
+
+Errors   :     0
+Warnings :     0 reported,     0 suppressed
+Messages :     1 reported,     0 suppressed
+
+
